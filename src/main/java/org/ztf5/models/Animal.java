@@ -8,9 +8,11 @@ public class Animal {
     public String nombre;
     public String tipo;
 
-    public enum familia {
+    public enum Familia {
         CANIDOS, FELIDOS, REPTILES, LEPORIDAE, MUSTELIDS
     };
+
+    public Familia familia;
 
     public String genero;
     public Date fecha;
@@ -19,13 +21,23 @@ public class Animal {
     public Animal() {
     }
 
-    public Animal(int id, String nombre, String tipo, String genero, Date fecha, String img) {
+    public Animal(int id, String nombre, String tipo, Familia familia, String genero, Date fecha, String img) {
         this.id = id;
         this.nombre = nombre;
         this.tipo = tipo;
+        this.familia = familia;
         this.genero = genero;
         this.fecha = fecha;
         this.img = img;
+
+    }
+
+    public Familia getFamilia() {
+        return this.familia;
+    }
+
+    public void setFamilia(Familia familia) {
+        this.familia = familia;
     }
 
     public int getId() {
@@ -74,35 +86,5 @@ public class Animal {
 
     public void setImg(String img) {
         this.img = img;
-    }
-
-    public Animal id(int id) {
-        setId(id);
-        return this;
-    }
-
-    public Animal nombre(String nombre) {
-        setNombre(nombre);
-        return this;
-    }
-
-    public Animal tipo(String tipo) {
-        setTipo(tipo);
-        return this;
-    }
-
-    public Animal genero(String genero) {
-        setGenero(genero);
-        return this;
-    }
-
-    public Animal fecha(Date fecha) {
-        setFecha(fecha);
-        return this;
-    }
-
-    public Animal img(String img) {
-        setImg(img);
-        return this;
     }
 }
