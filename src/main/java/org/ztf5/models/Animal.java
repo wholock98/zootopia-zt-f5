@@ -2,20 +2,34 @@ package org.ztf5.models;
 
 import java.util.*;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
 public class Animal {
 
+
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public int id;
+    @Column(name="Nombre")
     public String nombre;
+    @Column(name="Tipo")
     public String tipo;
 
     public enum Familia {
         CANIDOS, FELIDOS, REPTILES, LEPORIDAE, MUSTELIDS
     };
 
+    @Column(name="Familia")
     public Familia familia;
-
+    @Column(name="Género")
     public String genero;
+    @Column(name="Fecha")
     public Date fecha;
+    @Column(name="Imagen")
     public String img;
 
     public Animal() {
@@ -40,13 +54,13 @@ public class Animal {
         this.familia = familia;
     }
 
-    public int getId() {
-        return this.id;
-    }
+    // public int getId() {
+    //     return this.id;
+    // }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    // public void setId(int id) {
+    //     this.id = id;
+    // }
 
     public String getNombre() {
         return this.nombre;

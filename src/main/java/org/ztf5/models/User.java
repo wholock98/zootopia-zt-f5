@@ -1,9 +1,20 @@
 package org.ztf5.models;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+    @Column(name="user")
     private String user;
+    @Column(name="password")
     private String password;
 
     public User() {
@@ -15,13 +26,13 @@ public class User {
         this.password = password;
     }
 
-    public int getId() {
-        return this.id;
-    }
+    // public int getId() {
+    //     return this.id;
+    // }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    // public void setId(int id) {
+    //     this.id = id;
+    // }
 
     public String getUser() {
         return this.user;
