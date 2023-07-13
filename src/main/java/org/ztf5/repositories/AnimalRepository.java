@@ -1,8 +1,7 @@
 package org.ztf5.repositories;
 
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.ztf5.models.Animal;
 
-@Repository
-public interface AnimalRepository extends CrudRepository<Animal, Long> {}
+
+public interface AnimalRepository extends JpaRepository<Animal, Long> {}
