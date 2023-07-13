@@ -13,6 +13,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name="iduser")
     private int id;
     @Column(name="user")
     private String user;

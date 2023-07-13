@@ -17,6 +17,7 @@ public class Animal {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name="idanimales")
     public int id;
     @Column(name="Nombre")
     public String nombre;
