@@ -6,11 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { MatInputModule} from '@angular/material/input';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
 import { FormComponent } from './login/components/form/form.component';
+import { MaterialModule } from './modules/material/material.module';
+import { AddanimalComponent } from './views/addanimal/components/addanimal/addanimal.component';
 
 
 
@@ -22,14 +20,13 @@ import { FormComponent } from './login/components/form/form.component';
     HeaderComponent,
     FooterComponent,
     FormComponent,
+    AddanimalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatInputModule,
-    MatToolbarModule,
-    MatIconModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
