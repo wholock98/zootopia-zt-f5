@@ -11,9 +11,11 @@ import { MatInputModule} from '@angular/material/input';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { FormComponent } from './login/components/form/form.component';
-import { EditarAnimalComponent } from './editar-animal/editar-animal.component';
-import { FormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { EditAnimalViewComponent } from './views/edit-animal-view/edit-animal-view.component';
+import { EditarAnimalComponent } from './editar-animal/editar-animal.component';
+
 
 
 
@@ -25,7 +27,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     HeaderComponent,
     FooterComponent,
     FormComponent,
-    EditarAnimalComponent,
+    EditAnimalViewComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -34,9 +37,14 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatInputModule,
     MatToolbarModule,
     MatIconModule,
-    FormsModule,
-    MatDatepickerModule
+    MatFormFieldModule,
+    MatDatepickerModule,
+    EditarAnimalComponent,
   ],
+  exports : [
+    EditarAnimalComponent,
+  ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

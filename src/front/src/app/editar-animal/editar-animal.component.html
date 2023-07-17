@@ -1,5 +1,54 @@
-<p> Nombre {{name}}</p>
-<input type="text" [(ngModel)]="name">
+<form class="name">
+  <mat-form-field class="name">
+      <mat-label>Nombre</mat-label>
+      <input matInput placeholder="name">
+      <mat-form-field>
+        <mat-label>Familia</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Continente</mat-label>
+        <mat-select>
+          <mat-option value="asia">Asia</mat-option>
+          <mat-option value="africa">Africa</mat-option>
+          <mat-option value="america del norte">America del Norte</mat-option>
+          <mat-option value="america del sur">America del Sur</mat-option>
+          <mat-option value="antartida">Antartida</mat-option>
+          <mat-option value="europa">Europa</mat-option>
+          <mat-option value="oceania">Oceania</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      
+      
+
+
+
+<!-- <form class="Editar Animal"></form>
+< mat-form-field class="Nombre" > 
+  < mat-label > Nombre </ mat-label > 
+  <input matInput placeholder="Nombre">
+</ mat-form-field > 
+
+< mat-form-field > 
+  < mat-label > Seleccionar </ mat-label > 
+  < mat-select > 
+    < mat-option  valor = "uno" > Primera opción </ mat-option > 
+    < mat-option  valor = "dos" > Segundaopción </mat-option > 
+  </ mat-select > 
+</ mat-form-field > 
+< mat-form-field > 
+  < mat-label > Textarea </ mat-label > 
+  < textarea  matInput > </ textarea > 
+</ mat-form -campo > -->
+
 
 
 
