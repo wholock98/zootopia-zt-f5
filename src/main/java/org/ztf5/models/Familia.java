@@ -27,9 +27,6 @@ public class Familia {
         this.nombre = nombre;
     }
 
-    public Familia() {
-    }
-
     public int getId() {
         return this.id;
     }

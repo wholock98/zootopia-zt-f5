@@ -37,8 +37,6 @@ public class Animal {
     @Column(name = "Imagen")
     public String img;
 
-    public Animal() {
-    }
 
     public Animal(int id, String nombre, String tipo, int familia, String genero, Date fecha, String img) {
         this.id = id;

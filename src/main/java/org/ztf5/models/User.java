@@ -19,9 +19,7 @@ public class User {
     private String user;
     @Column(name="password")
     private String password;
-
-    public User() {
-    }
+    
 
     public User(int id, String user, String password) {
         this.id = id;
