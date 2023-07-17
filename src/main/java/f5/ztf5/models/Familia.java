@@ -1,4 +1,4 @@
-package org.ztf5.models;
+package f5.ztf5.models;
 
 import java.util.List;
 
@@ -15,9 +15,12 @@ import jakarta.persistence.Table;
 public class Familia {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_familias")
     public int id;
+
+    public Familia() {
+    }
 
     @Column(name = "nombre")
     public String nombre;

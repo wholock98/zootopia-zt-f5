@@ -1,4 +1,4 @@
-package org.ztf5.models;
+package f5.ztf5.models;
 
 import java.util.*;
 
@@ -19,7 +19,7 @@ import jakarta.persistence.Table;
 public class Animal {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idanimales")
     public int id;
     @Column(name = "nombre")
@@ -27,8 +27,8 @@ public class Animal {
     @Column(name = "tipo")
     public String tipo;
 
-    @Column(name = "fk_idfamilia")
-    public int familia;
+    // @Column(name = "fk_idfamilia")
+    // public int familia;
 
     @Column(name = "Género")
     public String genero;
@@ -37,25 +37,26 @@ public class Animal {
     @Column(name = "Imagen")
     public String img;
 
+    public Animal() {
+    }
 
-    public Animal(int id, String nombre, String tipo, int familia, String genero, Date fecha, String img) {
+    public Animal(int id, String nombre, String tipo, String genero, Date fecha, String img) {
         this.id = id;
         this.nombre = nombre;
         this.tipo = tipo;
-        this.familia = familia;
         this.genero = genero;
         this.fecha = fecha;
         this.img = img;
 
     }
 
-    public int getFamilia() {
-        return this.familia;
-    }
+    // public int getFamilia() {
+    // return this.familia;
+    // }
 
-    public void setFamilia(int familia) {
-        this.familia = familia;
-    }
+    // public void setFamilia(int familia) {
+    // this.familia = familia;
+    // }
 
     public int getId() {
         return this.id;

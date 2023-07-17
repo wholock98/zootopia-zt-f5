@@ -1,11 +1,12 @@
-package org.ztf5.services;
+package f5.ztf5.services;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.ztf5.models.Animal;
-import org.ztf5.repositories.AnimalRepository;
+
+import f5.ztf5.models.Animal;
+import f5.ztf5.repositories.AnimalRepository;
 
 @Service
 public class AnimalService {

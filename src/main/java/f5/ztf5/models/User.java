@@ -1,4 +1,4 @@
-package org.ztf5.models;
+package f5.ztf5.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -8,18 +8,20 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="users")
+@Table(name = "users")
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="iduser")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "iduser")
     private int id;
-    @Column(name="user")
+    @Column(name = "user")
     private String user;
-    @Column(name="password")
+    @Column(name = "password")
     private String password;
-    
+
+    public User() {
+    }
 
     public User(int id, String user, String password) {
         this.id = id;
@@ -32,7 +34,7 @@ public class User {
     }
 
     // public void setId(int id) {
-    //     this.id = id;
+    // this.id = id;
     // }
 
     public String getUser() {
