@@ -3,30 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './shared/components/header/header.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormComponent } from './login/components/form/form.component';
-import { MaterialModule } from './modules/material/material.module';
-import { AddanimalComponent } from './views/addanimal/components/addanimal/addanimal.component';
-
-
-
-
-
+import { MaterialModule } from './shared/material/material.module';
+import { SharedModule } from './shared/shared.module';
+import { LoginformComponent } from './components/loginform/loginform.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    FormComponent,
-    AddanimalComponent
+    LoginformComponent
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    SharedModule  
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
