@@ -1,15 +1,14 @@
-.footer {
-    bottom: 0;
-    display: flex;
+.mat-toolbar {
+    flex: 1 1 auto;
     justify-content: center;
     align-items: center;
+    background: #585349;
     width: 100%;
-    position: absolute;
-    color: #F8F8F8;
-    font-family: 'Irish Grover';
-    font-size: 22px;
+    height: 52px;
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
 }
