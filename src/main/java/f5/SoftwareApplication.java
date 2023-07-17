@@ -1,4 +1,4 @@
-package org.ztf5.Software;
+package f5;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,8 +1,12 @@
-package org.ztf5.services;
+package f5.ztf5.services;
+
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.ztf5.repositories.UserRepository;
+
+import f5.ztf5.models.User;
+import f5.ztf5.repositories.UserRepository;
 
 @Service
 public class UserService {
@@ -12,6 +16,10 @@ public class UserService {
 
     public void getUserById(Long id){
         userRepository.findById(id);
+    }
+
+    public List<User> getAllUsers(){
+       return (List<User>) userRepository.findAll();
     }
 
 }
