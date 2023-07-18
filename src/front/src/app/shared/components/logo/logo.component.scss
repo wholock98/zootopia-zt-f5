@@ -1,0 +1,31 @@
+.logo-container {
+    width: 162px;
+    height: 162px;
+    transform: rotate(179, 743deg);
+    background: #688A7A;
+    border-radius: 50%;
+    margin-top: 130px;
+    margin-left: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 14px #038C3E;
+    border-left: solid 9px #038C3E;
+    border-right: solid 9px #038C3E;
+}
+
+.logo {
+    transform: rotate(179, 743deg);
+    background: #EEE2C2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px #835703;
+}
+
+.img-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
