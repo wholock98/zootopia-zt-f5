@@ -13,6 +13,7 @@ import { LoginformComponent } from './components/loginform/loginform.component';
 import { EditarAnimalComponent } from "./editar-animal/editar-animal.component";
 import { SharedModule } from "./shared/shared.module";
 
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -31,7 +32,7 @@ import { SharedModule } from "./shared/shared.module";
         MatFormFieldModule,
         MatDatepickerModule,
         EditarAnimalComponent,
-        SharedModule
+        SharedModule,
     ]
 })
 export class AppModule { }

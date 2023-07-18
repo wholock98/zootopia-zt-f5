@@ -1,9 +1,11 @@
+
 .name {
   display: flex;
   flex-direction: column;
   gap: 16px;
   max-width: 400px;
   margin: 0 auto;
+  margin-top: 10%;
 }
 
 
@@ -14,5 +16,5 @@
 
 
 mat-form-field {
-  width: 100%; 
+  width: 100%;
 }
