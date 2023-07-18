@@ -12,7 +12,6 @@ import { LogoComponent } from './components/logo/logo.component';
     LoginheaderComponent,
     FooterComponent,
     LogoComponent,
-    LogoComponent
   ],
   imports: [
     CommonModule,

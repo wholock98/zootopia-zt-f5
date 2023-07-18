@@ -1,34 +1,48 @@
 <form class="name">
-  <mat-form-field class="name">
+  <div class="input-container">
+    <mat-form-field>
       <mat-label>Nombre</mat-label>
-      <input matInput placeholder="name">
-    <mat-select>
-      <mat-option value="felidos">Félidos</mat-option>
-      <mat-option value="canidos">Cánidos</mat-option>
-      <mat-option value="reptiles">Reptiles</mat-option>
-      <mat-option value="mustelids">Mustelids</mat-option>
-      <mat-option value="leporidae">Leporidae</mat-option>
-    </mat-select>
+      <input matInput placeholder="Nombre">
     </mat-form-field>
-      <mat-form-field>
-        <mat-label>Continente</mat-label>
-        <mat-select>
-          <mat-option value="asia">Asia</mat-option>
-          <mat-option value="africa">Africa</mat-option>
-          <mat-option value="america del norte">America del Norte</mat-option>
-          <mat-option value="america del sur">America del Sur</mat-option>
-          <mat-option value="antartida">Antartida</mat-option>
-          <mat-option value="europa">Europa</mat-option>
-          <mat-option value="oceania">Oceania</mat-option>
-        </mat-select>
-      </mat-form-field>
-      <mat-form-field>
-        <mat-label>Fecha de entrada</mat-label>
-        <input matInput [matDatepicker]="picker">
-        <mat-hint>MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field>
+  </div>
+
+  <div class="input-container">
+    <mat-form-field>
+      <mat-label>Familia</mat-label>
+      <mat-select>
+        <mat-option value="felidos">Félidos</mat-option>
+        <mat-option value="canidos">Cánidos</mat-option>
+        <mat-option value="reptiles">Reptiles</mat-option>
+        <mat-option value="mustelids">Mustélidos</mat-option>
+        <mat-option value="leporidae">Lepóridos</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="input-container">
+    <mat-form-field>
+      <mat-label>Continente</mat-label>
+      <mat-select>
+        <mat-option value="asia">Asia</mat-option>
+        <mat-option value="africa">África</mat-option>
+        <mat-option value="america del norte">América del Norte</mat-option>
+        <mat-option value="america del sur">América del Sur</mat-option>
+        <mat-option value="antartida">Antártida</mat-option>
+        <mat-option value="europa">Europa</mat-option>
+        <mat-option value="oceania">Oceanía</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="input-container">
+    <mat-form-field>
+      <mat-label>Fecha de entrada</mat-label>
+      <input matInput [matDatepicker]="picker">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+</form>
 
 
 

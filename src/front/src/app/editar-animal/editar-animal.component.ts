@@ -19,4 +19,3 @@ continents: string[] = ['Asia', 'Europa', 'Africa', 'America del Norte', 'Americ
 
 }
 
-//[]
