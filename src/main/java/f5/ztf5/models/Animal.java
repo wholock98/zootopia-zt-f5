@@ -111,4 +111,9 @@ public class Animal {
     @JsonIgnore
     private Familia family;
 
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "fk_idcontinente", nullable = false)
+    @JsonIgnore
+    private Continent continente;
+
 }
