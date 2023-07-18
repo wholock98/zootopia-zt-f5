@@ -28,12 +28,12 @@ public class AnimalController {
     }
 
     @PostMapping
-    void addAnimal(@RequestBody Animal animal) {
+    public void addAnimal(@RequestBody Animal animal) {
         animalService.addAnimal(animal);
     }
 
     @DeleteMapping("/{id}")
-    void deleteAnimal(@PathVariable("id") Long id){
+    public void deleteAnimal(@PathVariable("id") Long id){
         animalService.deleteAnimal(id);
     }
     
