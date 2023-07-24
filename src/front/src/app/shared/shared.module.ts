@@ -12,8 +12,12 @@ import { SharedheaderComponent } from './components/sharedheader/sharedheader.co
     LoginheaderComponent,
     FooterComponent,
     LogoComponent,
+
+  ],
+
     SharedheaderComponent
    ],
+
   imports: [
     CommonModule,
     MaterialModule
