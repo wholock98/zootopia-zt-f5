@@ -1,1 +1,45 @@
-<p>sharedheader works!</p>
+<!--<p>
+    <mat-toolbar class="header">
+        <button mat-icon-button class="icon-menu">
+            <mat-icon>menu</mat-icon>
+          </button>
+      <span class="title">My Application</span>
+    </mat-toolbar>
+    
+    <mat-sidenav-container class="example-container">
+      <mat-sidenav mode="side" opened>
+        <h4> Familias</h4>
+        <p>Félidos</p>
+      </mat-sidenav>
+      <mat-sidenav-content>Main content</mat-sidenav-content>
+    </mat-sidenav-container>
+        
+   </p>-->
+
+  
+   <header class="header">
+    <h1 class="h1">
+       ZOOTOPIA
+    </h1>
+    
+    <button class="button" (click)="mostrarOcultar()" >{{mensaje_enlace}}
+        <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 12 12">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </button>
+
+    <nav class="nav isActive" *ngIf="mostrar">
+        <ul class="ul" style="list-style: none;">
+            <li class="li">FAMILIAS</li>
+            <li class="li"><img src="https://media.istockphoto.com/id/1413829676/es/foto/le%C3%B3n-adulto-macho-panthera-leo-saltando-con-la-boca-abierta-aislado-sobre-blanco.jpg?s=612x612&w=0&k=20&c=c5PPj1FlZC4A4izuyBwjdTl9uAe1rNWe_t7XeUuvv90=" alt="leon salvaje"><a href="#" class="a">Félidos</a></li>
+            <li class="li"><a href="#" class="a">Cánidos</a></li>
+            <li class="li"><a href="#" class="a">Reptiles</a></li>
+            <li class="li"><a href="#" class="a">Mustélidos</a></li>
+            <li class="li"><a href="#" class="a">Leporidae</a></li>
+        </ul>
+   
+    </nav>
+  </header>
+  
+  
+

@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SharedheaderComponent } from './sharedheader.component';
+import { HeaderComponent } from './header.component';
 
-describe('SharedheaderComponent', () => {
-  let component: SharedheaderComponent;
-  let fixture: ComponentFixture<SharedheaderComponent>;
+describe('HeaderComponent', () => {
+  let component: HeaderComponent;
+  let fixture: ComponentFixture<HeaderComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SharedheaderComponent]
+      declarations: [HeaderComponent]
     });
-    fixture = TestBed.createComponent(SharedheaderComponent);
+    fixture = TestBed.createComponent(HeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

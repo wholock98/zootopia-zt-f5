@@ -4,7 +4,7 @@ import { MaterialModule } from './material/material.module';
 import { LoginheaderComponent } from './components/loginheader/loginheader.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LogoComponent } from './components/logo/logo.component';
-
+import { SharedheaderComponent } from './components/sharedheader/sharedheader.component';
 
 
 @NgModule({
@@ -12,7 +12,12 @@ import { LogoComponent } from './components/logo/logo.component';
     LoginheaderComponent,
     FooterComponent,
     LogoComponent,
+
   ],
+
+    SharedheaderComponent
+   ],
+
   imports: [
     CommonModule,
     MaterialModule
@@ -20,7 +25,10 @@ import { LogoComponent } from './components/logo/logo.component';
   exports: [
     LoginheaderComponent,
     FooterComponent,
-    LogoComponent
-  ]
+    LogoComponent,
+    SharedheaderComponent
+   
+  
+  ],
 })
 export class SharedModule { }
